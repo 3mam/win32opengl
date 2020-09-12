@@ -145,32 +145,32 @@ typedef BOOL(APIENTRY *pChoosePixelFormatARB)(HDC, const int *,
 #define WGL_SAMPLE_BUFFERS_ARB 0x2041
 #define WGL_SAMPLES_ARB 0x2042
 
-pCreateContextAttribsARB glCreateContextAttribsARB;
-pChoosePixelFormatARB glChoosePixelFormatARB;
+extern pCreateContextAttribsARB glCreateContextAttribsARB;
+extern pChoosePixelFormatARB glChoosePixelFormatARB;
 
-pGetString glGetString;
-pCreateShader glCreateShader;
-pShaderSource glShaderSource;
-pCompileShader glCompileShader;
-pCreateProgram glCreateProgram;
-pAttachShader glAttachShader;
-pLinkProgram glLinkProgram;
-pGetAttribLocation glGetAttribLocation;
-pUseProgram glUseProgram;
-pGenBuffers glGenBuffers;
-pBindBuffer glBindBuffer;
-pBufferData glBufferData;
-pEnableVertexAttribArray glEnableVertexAttribArray;
-pVertexAttribPointer glVertexAttribPointer;
-pGenTextures glGenTextures;
-pBindTexture glBindTexture;
-pTexParameteri glTexParameteri;
-pTexImage2D glTexImage2D;
-pViewport glViewport;
-pDrawArrays glDrawArrays;
-pEnable glEnable;
-pClear glClear;
-pClearColor glClearColor;
+extern pGetString glGetString;
+extern pCreateShader glCreateShader;
+extern pShaderSource glShaderSource;
+extern pCompileShader glCompileShader;
+extern pCreateProgram glCreateProgram;
+extern pAttachShader glAttachShader;
+extern pLinkProgram glLinkProgram;
+extern pGetAttribLocation glGetAttribLocation;
+extern pUseProgram glUseProgram;
+extern pGenBuffers glGenBuffers;
+extern pBindBuffer glBindBuffer;
+extern pBufferData glBufferData;
+extern pEnableVertexAttribArray glEnableVertexAttribArray;
+extern pVertexAttribPointer glVertexAttribPointer;
+extern pGenTextures glGenTextures;
+extern pBindTexture glBindTexture;
+extern pTexParameteri glTexParameteri;
+extern pTexImage2D glTexImage2D;
+extern pViewport glViewport;
+extern pDrawArrays glDrawArrays;
+extern pEnable glEnable;
+extern pClear glClear;
+extern pClearColor glClearColor;
 
 GLint glInit();
 GLuint glShader(const GLchar *, GLenum);

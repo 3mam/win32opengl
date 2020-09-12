@@ -76,8 +76,11 @@ init_opengl_extensions(void) {
     fatal_error("Failed to activate dummy OpenGL rendering context.");
   }
 
- if (glInit() == -1) {
-    fatal_error(":(.");
+	int err = glInit();
+	char str[12];
+ if ( err < 0) {
+	sprintf(str, "%d", err);
+    fatal_error(str);
   }
  
   wglMakeCurrent(dummy_dc, 0);
